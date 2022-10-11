@@ -20,7 +20,7 @@ datas = datas[2].find_all('td')
 datas = str(datas[int(f'{week}')])
 datas = datas.replace('<br/>','\n')
 datas = re.sub(r"\d", "", datas)
-for i in ['<br>','<td class="textC">','</td>','<td class="textC last">','.']:
+for i in ['<br>','<td class="textC">','</td>','<td class="textC last">','.','&amp;']:
     datas = datas.replace(f'{i}','')
 print(datas)
 
