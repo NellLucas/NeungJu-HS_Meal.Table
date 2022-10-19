@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<div class="container">
+  <form action = "http://localhost:5000/result" method = "post">
+    <div class="row">
+        <div class="col-sm-9">
+        </div>
+        <div class="form-floating col-sm-3">
+        <input type="date" class="form-control " id="date" placeholder="date" name="date" min="2000-01-01">
+        <label for="date">날짜</label>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-9">
+        </div>    
+        <div class="form-floating col-sm-3">
+        <input type="number" class="form-control col-sm-3" id="time" placeholder="time" name="time">
+        <label for="daytime">시간대를 선택해주세요(아침:1, 점심:2, 저녁:3)</label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary" style="float:right;" id="result">검색</button>
+
+  </form>
+</div>
+
+</body>
+</html>
